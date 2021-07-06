@@ -63,7 +63,7 @@
 
 
         <record model="ir.actions.act_window" id="ks_dashboard_ninja.board_form_tree_action_window">
-            <field name="name">Dashboard Manager</field>
+            <field name="name">Configuracion</field>
             <field name="res_model">ks_dashboard_ninja.board</field>
             <field name="view_mode">tree,form</field>
             <field name="context">{'form_view_ref':'ks_dashboard_ninja.board_form',
@@ -75,7 +75,7 @@
                   web_icon="ks_dashboard_ninja,static/description/icon.png"
                   action="ks_dashboard_ninja.board_dashboard_action_window"/>
 
-        <menuitem name="Configuration" id="ks_dashboard_ninja.configuration_menu"
+        <menuitem name="Configuracion" id="ks_dashboard_ninja.configuration_menu"
                   parent="ks_dashboard_ninja.board_menu_root"
                   groups="ks_dashboard_ninja_group_manager" sequence="100"/>
 
