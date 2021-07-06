@@ -16,11 +16,7 @@ class KsDashboardNinjaItemAdvance(models.Model):
     ks_query_result = fields.Char(compute='ks_run_query', string="Result")
     ks_xlabels = fields.Char(string="X-Labels")
     ks_ylabels = fields.Char(string="Y-Labels")
-    ks_model_id = fields.Many2one('ir.model', string='Model', required=False,
-                                  domain="[('access_ids','!=',False),('transient','=',False),"
-                                         "('model','not ilike','base_import%'),('model','not ilike','ir.%'),"
-                                         "('model','not ilike','web_editor.%'),('model','not ilike','web_tour.%'),"
-                                         "('model','!=','mail.thread'),('model','not ilike','ks_dash%')]")
+    ks_model_id = fields.Many2one('ir.model', string='Model', required=False)
 
     ks_list_view_layout = fields.Selection([('layout_1','Default layout'),
                                             ('layout_2','Layout 1'),

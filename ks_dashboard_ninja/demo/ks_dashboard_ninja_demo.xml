@@ -30,7 +30,7 @@
             <field name="ks_dashboard_active">1</field>
             <field name="ks_dashboard_group_access" eval="False"/>
         </record>
-        <record id="demo_template3_dashboard" model="ks_dashboard_ninja.board">
+        <record id="demo_template4_dashboard" model="ks_dashboard_ninja.board">
             <field name="name">Balance</field>
             <field name="ks_dashboard_menu_name">Balance</field>
             <field name="ks_dashboard_top_menu_id" eval="ref('ks_dashboard_ninja.board_menu_root')"/>
@@ -38,7 +38,7 @@
             <field name="ks_dashboard_active">1</field>
             <field name="ks_dashboard_group_access" eval="False"/>
         </record>
-        <record id="demo_template3_dashboard" model="ks_dashboard_ninja.board">
+        <record id="demo_template5_dashboard" model="ks_dashboard_ninja.board">
             <field name="name">Cupones</field>
             <field name="ks_dashboard_menu_name">Cupones</field>
             <field name="ks_dashboard_top_menu_id" eval="ref('ks_dashboard_ninja.board_menu_root')"/>
@@ -46,7 +46,7 @@
             <field name="ks_dashboard_active">1</field>
             <field name="ks_dashboard_group_access" eval="False"/>
         </record>
-        <record id="demo_template3_dashboard" model="ks_dashboard_ninja.board">
+        <record id="demo_template6_dashboard" model="ks_dashboard_ninja.board">
             <field name="name">Servicios</field>
             <field name="ks_dashboard_menu_name">Servicios</field>
             <field name="ks_dashboard_top_menu_id" eval="ref('ks_dashboard_ninja.board_menu_root')"/>
@@ -54,7 +54,7 @@
             <field name="ks_dashboard_active">1</field>
             <field name="ks_dashboard_group_access" eval="False"/>
         </record>
-        <record id="demo_template3_dashboard" model="ks_dashboard_ninja.board">
+        <record id="demo_template7_dashboard" model="ks_dashboard_ninja.board">
             <field name="name">Promociones</field>
             <field name="ks_dashboard_menu_name">Promociones</field>
             <field name="ks_dashboard_top_menu_id" eval="ref('ks_dashboard_ninja.board_menu_root')"/>
@@ -62,7 +62,7 @@
             <field name="ks_dashboard_active">1</field>
             <field name="ks_dashboard_group_access" eval="False"/>
         </record>
-        <record id="demo_template3_dashboard" model="ks_dashboard_ninja.board">
+        <record id="demo_template8_dashboard" model="ks_dashboard_ninja.board">
             <field name="name">Informacion</field>
             <field name="ks_dashboard_menu_name">Informacion</field>
             <field name="ks_dashboard_top_menu_id" eval="ref('ks_dashboard_ninja.board_menu_root')"/>
