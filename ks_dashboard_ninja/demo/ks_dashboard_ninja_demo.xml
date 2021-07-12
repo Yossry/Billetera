@@ -1,10 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-
         <!-- Three Default Demo Dashboard with Templates : Template1, Template2, Template3-->
+        <!-- Aca encontramos los menues y submenues-->
 
-        <record id="demo_template1_dashboard" model="ks_dashboard_ninja.board">
+        <!-- Sub menu con template Negocio  -->
+
+        <record id="ks_dashboard_ninja.board_dashboard_action_window_negocio" model="ir.actions.client">
+            <field name="name">Negocio</field>
+            <field name="tag">ks_dashboard_ninja</field>
+            <field name="params" eval="{'ks_dashboard_id': ref('ks_dashboard_ninja.ks_template_1')}"/>
+            <field name="res_model">ks_dashboard_ninja.board</field>
+        </record>
+
+        <menuitem name="Negocio" id="ks_dashboard_ninja.negocio_menu_temp"
+                  parent="ks_dashboard_ninja.board_menu_root"
+                  groups="ks_dashboard_ninja_group_manager" sequence="100"/>
+
+        <menuitem name="Resumen Ejecutivo" id="ks_dashboard_ninja.resumeneje_menu_temp"
+                  parent="ks_dashboard_ninja.negocio_menu_temp"
+                  action="ks_dashboard_ninja.board_dashboard_action_window_negocio" groups="ks_dashboard_ninja_group_manager"/>
+
+        <menuitem name="Total" id="ks_dashboard_ninja.total_menu_temp"
+                  parent="ks_dashboard_ninja.negocio_menu_temp"
+                  action="ks_dashboard_ninja.board_dashboard_action_window_negocio" groups="ks_dashboard_ninja_group_manager"/>
+
+        <menuitem name="Prepago" id="ks_dashboard_ninja.prepago_menu_temp"
+                  parent="ks_dashboard_ninja.negocio_menu_temp"
+                  action="ks_dashboard_ninja.board_dashboard_action_window_negocio" groups="ks_dashboard_ninja_group_manager"/>
+
+        <menuitem name="Tradicional" id="ks_dashboard_ninja.tradicional_menu_temp"
+                  parent="ks_dashboard_ninja.negocio_menu_temp"
+                  action="ks_dashboard_ninja.board_dashboard_action_window_negocio" groups="ks_dashboard_ninja_group_manager"/>
+
+        <menuitem name="Recargas" id="ks_dashboard_ninja.recargas_menu_temp"
+                  parent="ks_dashboard_ninja.negocio_menu_temp"
+                  action="ks_dashboard_ninja.board_dashboard_action_window_negocio" groups="ks_dashboard_ninja_group_manager"/>
+
+        <menuitem name="Consumos" id="ks_dashboard_ninja.consumos_menu_temp"
+                  parent="ks_dashboard_ninja.negocio_menu_temp"
+                  action="ks_dashboard_ninja.board_dashboard_action_window_negocio" groups="ks_dashboard_ninja_group_manager"/>
+
+        <menuitem name="Medios de Cobro" id="ks_dashboard_ninja.medioscobro_menu_temp"
+                  parent="ks_dashboard_ninja.negocio_menu_temp"
+                  action="ks_dashboard_ninja.board_dashboard_action_window_negocio" groups="ks_dashboard_ninja_group_manager"/>
+
+        <!-- Fin Sub menu con template Negocio -->
+
+        <!-- Sub menu con template Clientes  -->
+
+        <record id="ks_dashboard_ninja.board_dashboard_action_window_clientes" model="ir.actions.client">
+            <field name="name">Clientes</field>
+            <field name="tag">ks_dashboard_ninja</field>
+            <field name="params" eval="{'ks_dashboard_id': ref('ks_dashboard_ninja.ks_template_2')}"/>
+            <field name="res_model">ks_dashboard_ninja.board</field>
+        </record>
+
+        <menuitem name="Clientes" id="ks_dashboard_ninja.clientes_menu_temp"
+                  parent="ks_dashboard_ninja.board_menu_root"
+                  groups="ks_dashboard_ninja_group_manager" sequence="100"/>
+
+        <menuitem name="Total" id="ks_dashboard_ninja.total_c_menu_temp"
+                  parent="ks_dashboard_ninja.clientes_menu_temp"
+                  action="ks_dashboard_ninja.board_dashboard_action_window_clientes" groups="ks_dashboard_ninja_group_manager"/>
+
+        <menuitem name="Actuales" id="ks_dashboard_ninja.actuales_c_menu_temp"
+                  parent="ks_dashboard_ninja.clientes_menu_temp"
+                  action="ks_dashboard_ninja.board_dashboard_action_window_clientes" groups="ks_dashboard_ninja_group_manager"/>
+
+        <menuitem name="Nuevos" id="ks_dashboard_ninja.nuevos_c_menu_temp"
+                  parent="ks_dashboard_ninja.clientes_menu_temp"
+                  action="ks_dashboard_ninja.board_dashboard_action_window_clientes" groups="ks_dashboard_ninja_group_manager"/>
+
+        <menuitem name="Tradicionales" id="ks_dashboard_ninja.tradicionales_c_menu_temp"
+                  parent="ks_dashboard_ninja.clientes_menu_temp"
+                  action="ks_dashboard_ninja.board_dashboard_action_window_clientes" groups="ks_dashboard_ninja_group_manager"/>
+
+        <menuitem name="Prepagos" id="ks_dashboard_ninja.prepagos_c_menu_temp"
+                  parent="ks_dashboard_ninja.clientes_menu_temp"
+                  action="ks_dashboard_ninja.board_dashboard_action_window_clientes" groups="ks_dashboard_ninja_group_manager"/>
+
+        <menuitem name="Perfiles" id="ks_dashboard_ninja.perfiles_c_menu_temp"
+                  parent="ks_dashboard_ninja.clientes_menu_temp"
+                  action="ks_dashboard_ninja.board_dashboard_action_window_clientes" groups="ks_dashboard_ninja_group_manager"/>
+
+        <!-- Fin Sub menu con template  -->
+
+
+        <!-- Sub menu con template  -->
+
+        <record id="ks_dashboard_ninja.board_dashboard_action_window_template" model="ir.actions.client">
+            <field name="name">Sub Menu</field>
+            <field name="tag">ks_dashboard_ninja</field>
+            <field name="params" eval="{'ks_dashboard_id': ref('ks_dashboard_ninja.ks_template_3')}"/>
+            <field name="res_model">ks_dashboard_ninja.board</field>
+        </record>
+
+        <menuitem name="Zonas" id="ks_dashboard_ninja.zonas_menu_temp"
+                  parent="ks_dashboard_ninja.board_menu_root"
+                  groups="ks_dashboard_ninja_group_manager" sequence="100"/>
+
+        <menuitem name="Total" id="ks_dashboard_ninja.total_menu_temp"
+                  parent="ks_dashboard_ninja.zonas_menu_temp"
+                  action="ks_dashboard_ninja.board_dashboard_action_window_template" groups="ks_dashboard_ninja_group_manager"/>
+
+        <menuitem name="Provincias" id="ks_dashboard_ninja.provincias_menu_temp"
+                  parent="ks_dashboard_ninja.zonas_menu_temp"
+                  action="ks_dashboard_ninja.board_dashboard_action_window_template" groups="ks_dashboard_ninja_group_manager"/>
+
+        <menuitem name="Comercios" id="ks_dashboard_ninja.comercios_menu_temp"
+                  parent="ks_dashboard_ninja.zonas_menu_temp"
+                  action="ks_dashboard_ninja.board_dashboard_action_window_template" groups="ks_dashboard_ninja_group_manager"/>
+
+        <menuitem name="Alta de Comercios" id="ks_dashboard_ninja.altcomercios_menu_temp"
+                  parent="ks_dashboard_ninja.zonas_menu_temp"
+                  action="ks_dashboard_ninja.board_dashboard_action_window_template" groups="ks_dashboard_ninja_group_manager"/>
+        <!-- Fin Sub menu con template  -->
+
+        <!-- <record id="demo_template1_dashboard" model="ks_dashboard_ninja.board">
             <field name="name">Negocio</field>
             <field name="ks_dashboard_menu_name">Negocio</field>
             <field name="ks_dashboard_top_menu_id" eval="ref('ks_dashboard_ninja.board_menu_root')"/>
@@ -29,7 +142,8 @@
             <field name="ks_dashboard_default_template" eval="ref('ks_dashboard_ninja.ks_template_3')"/>
             <field name="ks_dashboard_active">1</field>
             <field name="ks_dashboard_group_access" eval="False"/>
-        </record>
+        </record>-->
+
         <record id="demo_template4_dashboard" model="ks_dashboard_ninja.board">
             <field name="name">Balance</field>
             <field name="ks_dashboard_menu_name">Balance</field>
@@ -70,5 +184,8 @@
             <field name="ks_dashboard_active">1</field>
             <field name="ks_dashboard_group_access" eval="False"/>
         </record>
+
+
+
     </data>
 </odoo>

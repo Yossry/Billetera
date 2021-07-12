@@ -83,5 +83,7 @@
                   parent="ks_dashboard_ninja.configuration_menu"
                   action="ks_dashboard_ninja.board_form_tree_action_window" groups="ks_dashboard_ninja_group_manager"/>
 
+
+
     </data>
 </odoo>
