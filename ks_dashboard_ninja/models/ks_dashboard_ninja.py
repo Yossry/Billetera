@@ -16,8 +16,7 @@ class KsDashboardNinjaBoard(models.Model):
     ks_dashboard_items_ids = fields.One2many('ks_dashboard_ninja.item', 'ks_dashboard_ninja_board_id',
                                              string='Dashboard Items')
     ks_dashboard_menu_name = fields.Char(string="Menu Name")
-    ks_dashboard_top_menu_id = fields.Many2one('ir.ui.menu', domain="[('parent_id','=',False)]",
-                                               string="Show Under Menu")
+    ks_dashboard_top_menu_id = fields.Many2one('ir.ui.menu', string="Show Under Menu")
     ks_dashboard_client_action_id = fields.Many2one('ir.actions.client')
     ks_dashboard_menu_id = fields.Many2one('ir.ui.menu')
     ks_dashboard_state = fields.Char()
