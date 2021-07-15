@@ -82,7 +82,7 @@
 
         <menuitem name="Perfiles" id="ks_dashboard_ninja.perfiles_c_menu_temp"
                   parent="ks_dashboard_ninja.clientes_menu_temp"
-                  action="ks_dashboard_ninja.board_dashboard_action_window_clientes" groups="ks_dashboard_ninja_group_manager"/>
+                  action="analisis_pic.analisis_pic_operaciones_action" groups="ks_dashboard_ninja_group_manager"/>
 
         <!-- Fin Sub menu con template  -->
 
