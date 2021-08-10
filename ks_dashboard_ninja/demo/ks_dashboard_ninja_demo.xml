@@ -6,7 +6,7 @@
 
         <!-- Sub menu con template Negocio  -->
 
-        <record id="ks_dashboard_ninja.board_dashboard_action_window_negocio" model="ir.actions.client">
+        <!--<record id="ks_dashboard_ninja.board_dashboard_action_window_negocio" model="ir.actions.client">
             <field name="name">Negocio</field>
             <field name="tag">ks_dashboard_ninja</field>
             <field name="params" eval="{'ks_dashboard_id': ref('ks_dashboard_ninja.ks_template_1')}"/>
@@ -43,13 +43,13 @@
 
         <menuitem name="Medios de Cobro" id="ks_dashboard_ninja.medioscobro_menu_temp"
                   parent="ks_dashboard_ninja.negocio_menu_temp"
-                  action="ks_dashboard_ninja.board_dashboard_action_window_negocio" groups="ks_dashboard_ninja_group_manager"/>
+                  action="ks_dashboard_ninja.board_dashboard_action_window_negocio" groups="ks_dashboard_ninja_group_manager"/>-->
 
         <!-- Fin Sub menu con template Negocio -->
 
         <!-- Sub menu con template Clientes  -->
 
-        <record id="ks_dashboard_ninja.board_dashboard_action_window_clientes" model="ir.actions.client">
+       <!-- <record id="ks_dashboard_ninja.board_dashboard_action_window_clientes" model="ir.actions.client">
             <field name="name">Clientes</field>
             <field name="tag">ks_dashboard_ninja</field>
             <field name="params" eval="{'ks_dashboard_id': ref('ks_dashboard_ninja.ks_template_2')}"/>
@@ -83,13 +83,13 @@
         <menuitem name="Perfiles" id="ks_dashboard_ninja.perfiles_c_menu_temp"
                   parent="ks_dashboard_ninja.clientes_menu_temp"
                   action="analisis_pic.analisis_pic_operaciones_action" groups="ks_dashboard_ninja_group_manager"/>
-
+-->
         <!-- Fin Sub menu con template  -->
 
 
         <!-- Sub menu con template  -->
 
-        <record id="ks_dashboard_ninja.board_dashboard_action_window_template" model="ir.actions.client">
+      <!--  <record id="ks_dashboard_ninja.board_dashboard_action_window_template" model="ir.actions.client">
             <field name="name">Zonas</field>
             <field name="tag">ks_dashboard_ninja</field>
             <field name="params" eval="{'ks_dashboard_id': ref('ks_dashboard_ninja.ks_template_3')}"/>
@@ -118,8 +118,9 @@
         <!-- Fin Sub menu con template  -->
 
         <!-- Sub menu con template Balance  -->
+        -->
 
-        <record id="ks_dashboard_ninja.board_dashboard_action_window_balance" model="ir.actions.client">
+       <!-- <record id="ks_dashboard_ninja.board_dashboard_action_window_balance" model="ir.actions.client">
             <field name="name">Balance</field>
             <field name="tag">ks_dashboard_ninja</field>
             <field name="params" eval="{'ks_dashboard_id': ref('ks_dashboard_ninja.ks_template_4')}"/>
@@ -157,8 +158,8 @@
         <!-- Fin Sub menu con template  -->
 
         <!-- Sub menu con template Cupones  -->
-
-        <record id="ks_dashboard_ninja.board_dashboard_action_window_cupones" model="ir.actions.client">
+-->
+   <!--     <record id="ks_dashboard_ninja.board_dashboard_action_window_cupones" model="ir.actions.client">
             <field name="name">Cupones</field>
             <field name="tag">ks_dashboard_ninja</field>
             <field name="params" eval="{'ks_dashboard_id': ref('ks_dashboard_ninja.ks_template_5')}"/>
@@ -187,8 +188,8 @@
 
         <!-- Fin Sub menu con template  -->
         <!-- Sub menu con template Servicios  -->
-
-        <record id="ks_dashboard_ninja.board_dashboard_action_window_servicios" model="ir.actions.client">
+-->
+   <!--     <record id="ks_dashboard_ninja.board_dashboard_action_window_servicios" model="ir.actions.client">
             <field name="name">Servicios</field>
             <field name="tag">ks_dashboard_ninja</field>
             <field name="params" eval="{'ks_dashboard_id': ref('ks_dashboard_ninja.ks_template_5')}"/>
@@ -212,8 +213,8 @@
                   action="ks_dashboard_ninja.board_dashboard_action_window_servicios" groups="ks_dashboard_ninja_group_manager"/>
 
         <!-- Sub menu con template Promociones  -->
-
-        <record id="ks_dashboard_ninja.board_dashboard_action_window_promociones" model="ir.actions.client">
+-->
+   <!--     <record id="ks_dashboard_ninja.board_dashboard_action_window_promociones" model="ir.actions.client">
             <field name="name">Promociones</field>
             <field name="tag">ks_dashboard_ninja</field>
             <field name="params" eval="{'ks_dashboard_id': ref('ks_dashboard_ninja.ks_template_6')}"/>
@@ -239,7 +240,7 @@
         <!-- Fin Sub menu con template  -->
         <!-- Sub menu con template Informes  -->
 
-        <record id="ks_dashboard_ninja.board_dashboard_action_window_informes" model="ir.actions.client">
+   <!--     <record id="ks_dashboard_ninja.board_dashboard_action_window_informes" model="ir.actions.client">
             <field name="name">Informes</field>
             <field name="tag">ks_dashboard_ninja</field>
             <field name="params" eval="{'ks_dashboard_id': ref('ks_dashboard_ninja.ks_template_7')}"/>

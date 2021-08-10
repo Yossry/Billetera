@@ -61,7 +61,7 @@
                 {"item_id":"ks_dashboard_ninja.ks_default_item_4", "data": {"x": 18, "y": 0, "width": 17, "height": 2}}
                 ]
             </field>
-            <field name="ks_item_count">7</field>
+            <field name="ks_item_count">4</field>
         </record>
 
         <record id="ks_template_5" model="ks_dashboard_ninja.board_template">
